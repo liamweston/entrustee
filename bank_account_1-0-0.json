@@ -1,11 +1,5 @@
 {
   "$schema": "https://raw.githubusercontent.com/liamweston/entrustee/master/baseschema#",
-  "self": {
-    "vendor": "com.entrustee",
-    "name": "bank_account",
-    "format": "jsonschema",
-    "version": "1-0-0"
-  },
   "type": "object",
   "properties": {
     "Bank Name": {
