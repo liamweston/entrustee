@@ -1,0 +1,18 @@
+{
+  "schema": "https://raw.githubusercontent.com/liamweston/entrustee/master/bank_account_1-0-0.json",
+  "data": {
+    "id": "1",
+    "accountid": "1",
+    "Bank Name": "Barlays",
+    "Account Holder Name": "Mr LM Weston",
+    "Account Number": 70945080,
+    "Sort Code": "20-59-59",
+    "Description": "Main account for all direct debits, salary etc.",
+    "Account Type": "Current Account",
+    "BIC / SWIFT": "33333333",
+    "Branch Address": "1 The high street",
+    "Branch Phone Number": "016254646464"
+  }
+}
+
+
