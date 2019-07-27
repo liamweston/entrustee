@@ -1,8 +1,8 @@
 {
   "schema": "https://raw.githubusercontent.com/liamweston/entrustee/master/bank_account_1-0-0.json",
+  "id": "1",
+  "accountid": "1",
   "data": {
-    "id": "1",
-    "accountid": "1",
     "Bank Name": "Barlays",
     "Account Holder Name": "Mr LM Weston",
     "Account Number": 70945080,
