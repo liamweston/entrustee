@@ -1,0 +1,92 @@
+{
+  "$schema": "https://raw.githubusercontent.com/liamweston/entrustee/master/baseschema#",
+  "self": {
+    "vendor": "com.entrustee",
+    "name": "bank_account",
+    "format": "jsonschema",
+    "version": "1-0-0"
+  },
+  "type": "object",
+  "properties": {
+    "Bank Name": {
+      "title": "Bank Name",
+      "description": "Name of the bank or building society",
+      "type": "string",
+      "minLength": 1
+    },
+    "Account Holder Name": {
+      "title": "Account Holder Name",
+      "description": "Name on the account",
+      "type": "string",
+      "minLength": 1
+    },
+    "Description": {
+      "description": "Description",
+      "$comment": "A description of this account",
+      "type": "string",
+      "minLength": 1
+    },
+    "Account Type": {
+      "title": "Description",
+      "description": "Type of account",
+      "type": "string",
+      "enum": [
+        "Current Account",
+        "Savings Account",
+        "ISA",
+        "Other"
+      ]
+    },
+    "Sort Code": {
+      "title": "Sort Code",
+      "description": "Sode code for the account",
+      "$comment": "Sort codes must be in the format XX-XX-XX",
+      "type": "string",
+      "minLength": 8,
+      "maxLength": 8,
+      "pattern": "^(\\d){2}-(\\d){2}-(\\d){2}$"
+    },
+    "Account Number": {
+      "title": "Account Number",
+      "description": "Number of the account",
+      "type": "number",
+      "minLength": 7,
+      "maxLength": 8
+    },
+    "BIC / SWIFT": {
+      "description": "BIC / SWIFT / SWIFTBIC reference identifying the bank",
+      "$comment": "8 or 11 characters long",
+      "type": "string",
+      "minLength": 8,
+      "maxLength": 11
+    },
+    "IBAN": {
+      "description": "International Bank Account Number or IBAN",
+      "$comment": "Up to 34 characters long",
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 34
+    },
+    "Branch Phone Number": {
+      "title": "Branch Phone Number",
+      "description": "Telephone number of the branch",
+      "type": "string",
+      "minLength": 1
+    },
+    "Branch Address": {
+      "title": "Branch Address",
+      "description": "Address of bank",
+      "type": "string"
+    }
+  },
+  "description": "Comment describing your JSON Schema",
+
+  "required": [
+    "Bank Name",
+    "Account Holder Name",
+    "Description",
+    "Sort Code",
+    "Account Number"
+  ],
+  "additionalProperties": false
+}
